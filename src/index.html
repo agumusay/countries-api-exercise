@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>countries-api-exercise</title>
+  </head>
+
+  <body>
+    <script id="countries-template" type="text/x-handlebars-template">
+            <main class="container">
+              {{#each countriesObj}}
+              <div class="card" style="width: 18rem;">
+        <img src="{{flag}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">{{name}}</h2>
+          <h3 class="lead">{{capital}}</h3>
+          <section class='card-element'>Languages : {{#each languages}}
+            {{this.name}}
+            {{/each}}
+          </section>
+
+        </div>
+      </div>
+             {{/each}}
+            </main>
+    </script>
+  </body>
+</html>
