@@ -16,9 +16,10 @@
         <div class="card-body">
           <h2 class="card-title">{{name}}</h2>
           <h3 class="lead">{{capital}}</h3>
-          <section class='card-element'>Languages : {{#each languages}}
+          <section class='card-element'> Languages : <span>{{#each languages}}
             {{this.name}}
             {{/each}}
+            </span>
           </section>
 
         </div>

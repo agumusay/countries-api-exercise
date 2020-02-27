@@ -33,6 +33,12 @@ class FetchPage {
     console.log(context);
     let html = template({ countriesObj: context });
     document.body.innerHTML = html;
+    let sect = Array.from(document.querySelectorAll("span"));
+    sect.map((ele, i) => {
+      document.querySelectorAll("span")[i].innerText = ele.innerText
+        .split(" ")
+        .join(", ");
+    });
   }
 }
 
@@ -40,5 +46,6 @@ const baseURL = "https://restcountries.eu/rest/v2/all";
 
 document.addEventListener("DOMContentLoaded", event => {
   console.log("DOM fully loaded and parsed");
+
   new FetchPage(baseURL);
 });
