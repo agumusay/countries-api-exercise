@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let countriesObject = new FetchURL(baseURL).fetchApi();
   new generateTemplate("countries-template", document.body).handle(
     countriesObject,
-    "span"
+    ".comma"
   );
 });
