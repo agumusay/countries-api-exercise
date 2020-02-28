@@ -23,13 +23,13 @@ main {
 
 .card {
   margin: 10px;
-  background-color: rgb(59, 0, 0);
   padding: 10px;
   color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px rgb(0, 28, 41), 2px 2px rgb(0, 28, 41),
+    3px 3px rgb(0, 28, 41), 0px 0px 20px black;
 }
-
 section {
   font-weight: bold;
 }

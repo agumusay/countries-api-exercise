@@ -10,8 +10,8 @@
   <body>
     <script id="countries-template" type="text/x-handlebars-template">
             <main class="container">
-              {{#each countriesObj}}
-              <div class="card" style="width: 18rem;">
+              {{#each countriesObject}}
+              <div class="card" style="width: 18rem; background: linear-gradient(75deg, rgb(0, 16, 68) , rgba(0, 16, 68, 0.849)), url({{flag}}); background-size: cover; background-position: center;">
         <img src="{{flag}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">{{name}}</h2>

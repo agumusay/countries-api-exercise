@@ -7,10 +7,10 @@ Display them to the DOM with the correct semantic HTML.
 
 You need to display:
 
-* name
-* capital
-* list of languages
-* country flag
+- name
+- capital
+- list of languages
+- country flag
 
 In addition, display the total count of countries.
 
