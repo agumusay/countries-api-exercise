@@ -1,5 +1,6 @@
 import "../styles/main.scss";
 import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 import FetchURL from "./lib/fetchPage";
 import generateTemplate from "./lib/template";
 
